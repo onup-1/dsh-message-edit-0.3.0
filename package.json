@@ -1,0 +1,51 @@
+{
+  "name": "dsh-message-edit",
+  "description": "Branch-based editing, rerolling, retrying, and version navigation for DeepSeek Harness conversations (unofficial DSH 0.2.x port)",
+  "version": "0.3.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "client.js",
+    "client.js.map",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onup-1/dsh-message-edit-0.3.0.git"
+  },
+  "homepage": "https://github.com/onup-1/dsh-message-edit-0.3.0",
+  "bugs": {
+    "url": "https://github.com/onup-1/dsh-message-edit-0.3.0/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "message-edit",
+    "reroll"
+  ],
+  "license": "MIT",
+  "private": true
+}
