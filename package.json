@@ -1,7 +1,7 @@
 {
   "name": "@onup/dsh-message-edit",
   "description": "Branch-based editing, rerolling, retrying, and version navigation for DeepSeek Harness conversations (unofficial DSH 0.2.x port of Moeblack/dsh-message-edit)",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "main": "./index.mjs",
   "exports": {
