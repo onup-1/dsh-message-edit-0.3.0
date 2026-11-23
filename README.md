@@ -12,11 +12,19 @@
 
 ## 安装（本移植版）
 
+**从 npm 装（推荐）**：
+
+```
+plugin_manager install_bundle  target=@onup/dsh-message-edit
+```
+
+**从本地目录装**：
+
 ```
 plugin_manager install_bundle  target=<本目录绝对路径>
 ```
 
-上游的 `dsh plugin --profile web add dsh-message-edit` 装的是 npm 上的 0.2.3，**在 DSH 0.2.x 上不可用**。
+注意包名：本移植版在 npm 上是 **`@onup/dsh-message-edit`**（带 scope `@onup`），跟作者自己的 `dsh-message-edit` 是两个不同的包。`dsh plugin --profile web add dsh-message-edit` 装的是 npm 上的 0.2.3，**在 DSH 0.2.x 上不可用**。
 
 ## 0.3.0 相对上游 0.2.3 的改动
 
